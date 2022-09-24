@@ -9,10 +9,12 @@ function App() {
     document.title = "ShareMe"; 
   }, []);
   return (
-    <Routes>
-      <Route path='login' element={<Login />} />
-      <Route path='/*' element={<Home />}/>
-    </Routes>
+    <div className='bg-green-100'>
+      <Routes>
+        <Route path='login' element={<Login />} />
+        <Route path='/*' element={<Home />}/>
+      </Routes>
+    </div>
   );
 }
 

@@ -66,8 +66,8 @@ function PinDetail({user}) {
   }
   return (
     <>
-      <div className='flex  flex-col m-auto bg-white ' style={{maxWidth: '1500px', borderRadius: '32px', }}>
-      <div className='relative flex justify-center items-center md:items-start flex-initial'>
+      <div className='flex  flex-col lg:flex-row m-auto bg-white ' style={{maxWidth: '1500px', borderRadius: '32px', }}>
+      <div className='relative flex justify-center items-center md:items-start flex-initial w-[22rem] py-[1.5rem] rounded-lg bg-gray-100 shadow-md shadow-gray-600'>
         <img src={pinDetail?.image && pinDetail.image.asset.url} className='rounded-t-3xl rounded-b-lg h-[20rem] w-[20rem]' alt='user-post' />
           <a href={`${pinDetail?.image?.asset?.url}?dl=`} download onClick={(e) => e.stopPropagation()}  className=''>
             <MdDownloadForOffline className='w-[2.5rem] h-[2.5rem] bg-red-400 p-.5 text-black  rounded-full flex items-center justify-center text-2xl hover:opacity-100 opacity-75 outline-none absolute top-2 rgiht-2'  />
@@ -80,10 +80,10 @@ function PinDetail({user}) {
             {/* <a href={pinDetail?.destination} target='_blank' rel='noreferrer'>{pinDetail?.destination.slice(8, 18)}</a> */}
           </div>
           <div>
-            <h1 className="text-4xl font-bold break-words mt-3">
+            <h1 className="text-4xl font-bold break-words my-3">
               {pinDetail.title}
             </h1>
-            <p className='mt-3'>{pinDetail?.about}</p>
+            <p className='my-3 bg-red-500 w-[6rem] text-center rounded-full text-gray-300 font-bold'>{pinDetail?.about}</p>
           </div>
           <Link to={`/user-profile/${pinDetail.postedBy?._id}`} className='hidden md:flex items-center gap-2' >
             <img src={pinDetail.postedBy?.image} alt='user-image' className='w-14 h-14 rounded-full object-cover ' />

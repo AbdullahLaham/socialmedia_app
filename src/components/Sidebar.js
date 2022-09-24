@@ -10,7 +10,7 @@ function Sidebar({user, closeToggle}) {
     const isActiveStyle = 'flex items-center px-5 gap-3 font-extrabold border-r-2 border-black  transition-all duration-200 ease-in-out capitalize';
     console.log(categories)
     return (
-    <div className='flex flex-col justify-between items-center bg-white h-full overflow-y-scrikk min-w-210 hide-scrollbar'>
+    <div className='flex flex-col justify-between items-center bg-gray-200 h-full overflow-y-scrikk min-w-210 hide-scrollbar'>
       <div className='flex flex-col items-start justify-between'>
         <Link to='/' className='flex px-5 gap-2 my-6 pt-1 w-190 items-center' onClick={() => closeToggle()}>
             <img src={logo} alt='logo' className='w-full'/>

@@ -7,7 +7,7 @@ function Navbar({user}) {
     const navigate = useNavigate();
     const {searchTerm, setSearchTerm} = useAuthStore();
   return (
-    <div className='flex gap-2 md:gap-5 w-full mt-5 pb-7'>
+    <div className='flex gap-2 md:gap-5 w-full  pb-7 bg-gray-300 p-[1rem] mt-[.1rem]'>
       <div className='flex justify-start gap-5 items-center w-full px-2 rounded-md bg-white border-none outline-none focus-within:shadow-sm'>
         <IoMdSearch fontSize={21} className="ml-1" />
         <form onSubmit={() => navigate('/search')}>

@@ -80,7 +80,7 @@ const savePin = () => {
   }
 }
   return (
-    <div className='flex flex-col justify-start items-center mt-5 lg:h-4/5 '>
+    <div className='flex flex-col justify-start items-center -mt-3 lg:h-4/5 bg-gray-200 py-[2.5rem] rounded-lg '>
       {fields && (
         <p className='text-red-500 mb-5 text-xl transition-all duration-150 ease-in-out '>
           please, fill in all the fields
